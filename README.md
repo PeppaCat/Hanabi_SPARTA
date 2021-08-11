@@ -99,7 +99,7 @@ BPBOT=SmartBot python eval_bot.py SearchBot --games 10
 BPBOT=SmartBot python eval_bot.py JointSearchBot --games 1
 
 # evaluate single-agent search with SAD blueprint
-GREEDY_ACTION=1 TORCHBOT_MODEL=models/sad_player2.pth python eval_bot.py SearchBot
+BPBOT=TorchBot GREEDY_ACTION=1 TORCHBOT_MODEL=models/sad_player2.pth python eval_bot.py SearchBot
 
 ```
 
